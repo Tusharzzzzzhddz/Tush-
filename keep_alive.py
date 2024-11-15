@@ -4,7 +4,7 @@ from threading import Thread
 app = Flask(__namel__)
 @app.route('/')
 def index():
-    return "Alive"
+    return ""
 
 def run():
     app.run(host='0.0.0.0',port=8080)
