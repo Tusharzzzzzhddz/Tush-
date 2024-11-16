@@ -153,7 +153,7 @@ def add_user(message):
         else:
             response = "Please specify a user ID and the duration (e.g., 1hour, 2days, 3weeks, 4months) to add 😘."
     else:
-        response = "You have not purchased yet purchase now from:- @Tushar112403."
+        response = "You have not purchased yet purchase now from:- @@Tushar112403."
 
     bot.reply_to(message, response)
 
@@ -189,7 +189,7 @@ def remove_user(message):
             response = '''Please Specify A User ID to Remove. 
 ✅ Usage: /remove <userid>'''
     else:
-        response = "🚫 Unauthorized Access! 🚫\n\nApne Baap Se Buy Kar Le Maadhrchod🙃.                        DM TO BUY:- @Tushar112403."
+        response = "🚫 Unauthorized Access! 🚫\n\nApne Baap Se Buy Kar Le Maadhrchod🙃.                        DM TO BUY:- @@Tushar112403."
 
     bot.reply_to(message, response)
 
@@ -208,7 +208,7 @@ def clear_logs_command(message):
         except FileNotFoundError:
             response = "Logs are already cleared ❌."
     else:
-        response = "🚫 Unauthorized Access! 🚫\n\nApne Baap Se Buy Kar Le Maadhrchod🙃.                        DM TO BUY:- @Tushar112403❄."
+        response = "🚫 Unauthorized Access! 🚫\n\nApne Baap Se Buy Kar Le Maadhrchod🙃.                        DM TO BUY:- @@Tushar112403❄."
     bot.reply_to(message, response)
 
 
@@ -227,7 +227,7 @@ def clear_users_command(message):
         except FileNotFoundError:
             response = "users are already cleared ❌."
     else:
-        response = "🚫 Unauthorized Access! 🚫\n\nApne Baap Se Buy Kar Le Maadhrchod🙃.                        DM TO BUY:- @Tushar112403"
+        response = "🚫 Unauthorized Access! 🚫\n\nApne Baap Se Buy Kar Le Maadhrchod🙃.                        DM TO BUY:- @@Tushar112403"
     bot.reply_to(message, response)
  
 
@@ -252,7 +252,7 @@ def show_all_users(message):
         except FileNotFoundError:
             response = "No data found ❌"
     else:
-        response = "🚫 Unauthorized Access! 🚫\n\nApne Baap Se Buy Kar Le Maadhrchod🙃.                        DM TO BUY:- @Tushar112403"
+        response = "🚫 Unauthorized Access! 🚫\n\nApne Baap Se Buy Kar Le Maadhrchod🙃.                        DM TO BUY:- @@Tushar112403"
     bot.reply_to(message, response)
 
 @bot.message_handler(commands=['logs'])
@@ -270,7 +270,7 @@ def show_recent_logs(message):
             response = "No data found ❌"
             bot.reply_to(message, response)
     else:
-        response = "🚫 Unauthorized Access! 🚫\n\nApne Baap Se Buy Kar Le Maadhrchod🙃.                        DM TO BUY:- @Tushar112403"
+        response = "🚫 Unauthorized Access! 🚫\n\nApne Baap Se Buy Kar Le Maadhrchod🙃.                        DM TO BUY:- @@Tushar112403"
         bot.reply_to(message, response)
 
 
@@ -279,7 +279,7 @@ def start_attack_reply(message, target, port, time):
     user_info = message.from_user
     username = user_info.username if user_info.username else user_info.first_name
     
-    response = f"{username}, 𝐀𝐓𝐓𝐀𝐂𝐊 𝐒𝐓𝐀𝐑𝐓𝐄𝐃.🔥🔥\n\n𝐓𝐚𝐫𝐠𝐞𝐭: {target}\n𝐏𝐨𝐫𝐭: {port}\n𝐓𝐢𝐦𝐞: {time} 𝐒𝐞𝐜𝐨𝐧𝐝𝐬\n𝐌𝐞𝐭𝐡𝐨𝐝: VIP- User of @Tushar112403 Vvip Server"
+    response = f"{username}, 𝐀𝐓𝐓𝐀𝐂𝐊 𝐒𝐓𝐀𝐑𝐓𝐄𝐃.🔥🔥\n\n𝐓𝐚𝐫𝐠𝐞𝐭: {target}\n𝐏𝐨𝐫𝐭: {port}\n𝐓𝐢𝐦𝐞: {time} 𝐒𝐞𝐜𝐨𝐧𝐝𝐬\n𝐌𝐞𝐭𝐡𝐨𝐝: VIP- User of @@Tushar112403 Vvip Server"
     bot.reply_to(message, response)
 
 # Dictionary to store the last time each user ran the /bgmi command
@@ -320,7 +320,7 @@ def handle_bgmi(message):
         else:
             response = "✅ Usage :- /bgmi <target> <port> <time>"  # Updated command syntax
     else:
-        response = ("🚫 Unauthorized Access! 🚫\n\nApne Baap Se Buy Kar Le Maadhrchod🙃.                        DM TO BUY:- @Tushar112403")
+        response = ("🚫 Unauthorized Access! 🚫\n\nApne Baap Se Buy Kar Le Maadhrchod🙃.                        DM TO BUY:- @@Tushar112403")
 
     bot.reply_to(message, response)
 
@@ -341,7 +341,7 @@ def show_command_logs(message):
         except FileNotFoundError:
             response = "No command logs found."
     else:
-        response = "🚫 Unauthorized Access! 🚫\n\nApne Baap Se Buy Kar Le Maadhrchod🙃.                        DM TO BUY:- @Tushar112403."
+        response = "🚫 Unauthorized Access! 🚫\n\nApne Baap Se Buy Kar Le Maadhrchod🙃.                        DM TO BUY:- @@Tushar112403."
 
     bot.reply_to(message, response)
 
@@ -357,7 +357,7 @@ def show_help(message):
 🤖 To See Admin Commands:
 💥 /admincmd : Shows All Admin Commands.
 
-Buy From :- @Tushar112403
+Buy From :- @@Tushar112403
 '''
     for handler in bot.message_handlers:
         if hasattr(handler, 'commands'):
@@ -372,7 +372,7 @@ Buy From :- @Tushar112403
 @bot.message_handler(commands=['start'])
 def welcome_start(message):
     user_name = message.from_user.first_name
-    response = f''''❄️ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ vip server ᴅᴅᴏs ʙᴏᴛ ᴛʜɪs ɪs ʜɪɢʜ  sᴇʀᴠᴇʀ ʙᴀsᴇᴅ ᴅᴅᴏs. ᴛᴏ ɢᴇᴛ ᴀᴄᴄᴇss = @Tushar112403  /bgmi'''''
+    response = f''''❄️ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ vip server ᴅᴅᴏs ʙᴏᴛ ᴛʜɪs ɪs ʜɪɢʜ  sᴇʀᴠᴇʀ ʙᴀsᴇᴅ ᴅᴅᴏs. ᴛᴏ ɢᴇᴛ ᴀᴄᴄᴇss = @@Tushar112403  /bgmi'''''
     bot.reply_to(message, response)
 
 @bot.message_handler(commands=['rules'])
@@ -382,7 +382,7 @@ def welcome_rules(message):
 
 1. Dont Run Too Many Attacks !! Cause A Ban From Bot
 2. Dont Run 2 Attacks At Same Time Becz If U Then U Got Banned From Bot.
-3. MAKE SURE YOU JOINED https://youtube.com/@@ROYxOWNER OTHERWISE NOT WORK
+3. MAKE SURE YOU JOINED https://youtube.com/@@Tushar112403 OTHERWISE NOT WORK
 4. We Daily Checks The Logs So Follow these rules to avoid Ban!!'''
     bot.reply_to(message, response)
 
